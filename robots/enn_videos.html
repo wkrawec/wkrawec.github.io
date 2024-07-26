@@ -1,0 +1,165 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html dir="ltr" xmlns="http://www.w3.org/1999/xhtml">
+
+<!-- #BeginTemplate "../master.dwt" -->
+
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<!-- #BeginEditable "doctitle" -->
+<title>Walter O Krawec - Videos</title>
+<style type="text/css">
+
+
+
+
+
+
+
+
+
+
+.auto-style1 {
+	color: #003366;
+	text-decoration: underline;
+}
+</style>
+<!-- #EndEditable -->
+<link href="../styles/style0.css" media="screen" rel="stylesheet" title="CSS" type="text/css" />
+<style type="text/css">
+
+.auto-style1 {
+	color: #006699;
+}
+</style>
+</head>
+
+<body>
+
+<!-- Begin Container -->
+<div id="container">
+	<!-- Begin Masthead -->
+	<div id="masthead">
+		<h1><a href="#">Walter O</a>. Krawec</h1>
+		<h3>&nbsp;</h3>
+	</div>
+	<!-- End Masthead -->
+	<!-- Begin Navigation -->
+	<div id="navigation">
+		<ul>
+			<li><a href="../index.html">Home</a></li>
+			<li><a href="../math/index.html">Math and CS</a></li>
+			<li><a href="index.html">Robotics</a></li>
+			<li><a href="../papers.html">Publications</a></li>
+			<li><a href="../contact.html">Contact</a></li>
+		</ul>
+	</div>
+	<!-- End Navigation -->
+	<!-- Begin content_container -->
+	<div id="content_container">
+		<!-- Begin Left Column -->
+		<div id="column_left" style="width: 418px">
+			<!-- #BeginEditable "content" -->
+			<h2>ENN - Videos</h2>
+			<p><strong>Video 1: <a href="video.php?name=G918WaN-Mno">Click to play</a><br />
+			<br>Description: </strong>This robot uses four binary proximity sensors and learns to follow a wall. Note that there is only a penalty for crashing into a wall and there is no reward for following it. Also each of the four sensors report a binary 1 or 0 if there is a wall or not (there is no distance calculation done by the sensor). Despite this however the ENN evolved a behavior allowing it to hug the wall.</p>
+			<p>&nbsp;</p>
+			
+			<p><strong>Video 2: <a href="video.php?name=FkLBG2FZwu0">Click to play</a><br />
+			<br>Description: </strong>Robot with two short range IR proximity sensors and one long range proximity sensor attached to a motor. ENN learns to use the long range IR to "scan" for obstacles.</p>
+			<p>&nbsp;</p>
+
+
+			<p><strong>Video 3: <a href="video.php?name=Uu1NUNZVw_k">Click to play</a><br />
+			<br>Description: </strong>Two evolving robots interacting with each other. Each has 3 binary obstacle sensors and 4 binary robot proximity detectors (which determine if another robot is nearby in front, back, left, or right).<br><br>
+			Robots each begin with a random ENN (evolving neural network) which slowly evolves (in real time) as the robot interacts with its environment. Robots were not directly rewarded for interacting with each other yet developed behaviors causing them to group together.</p>
+			
+			<p>&nbsp;</p>
+			<p><strong>Video 4: <a href="video.php?name=P9grVNU79Bg">Click to play</a><br />
+			<br>Description: </strong>Here the white robot has three IR 
+			proximity sensors wheras the blue robot has no IR sensors. The blue 
+			robot is however able to detect if a robot is in front, behind, to 
+			the left, or right. After some time, the white robot learns to use 
+			its IR sensors to avoid walls while the blue robot learns to follow 
+			the other.</p>
+			
+			<p>&nbsp;</p>
+			<p><strong>Video 5: <a href="video.php?name=JOmPqNvpjJ8">Click to play</a><br />
+			<br>Description: </strong>Demonstrating how a robot can be taught certain tasks.  Here we teach a robot to follow a line.  We teach the robot simply by "clapping" to guide the robot as to which way to turn.  While line following is a simple task, this teaching technique can be applied to many other learning goals.  Note: the green circles represent the line detectors of the robot.</p>
+
+			<p>&nbsp;</p>
+			<p><strong>Video 6: <a href="video.php?name=XTaOVyAlXO4">Click to play</a><br />
+			<br>Description: </strong>Showing a robot that evolved a method of scanning left and right at certain intervals for a wall.  This sweeping behavior occasionally presents itself to varying degrees (in particular, some robots scan more than the one recorded here)</p>
+
+			<p>&nbsp;</p>
+			<p><strong>Video 7: <a href="video.php?name=qwlenyCHfoI">Click to play</a><br />
+			<br>Description: </strong>Showing how a robot can be evolved in stages.  The robot begins with only two IR sensors covering the left side.  Once these have been learned, we add (in real time without having to reset the robot) two new sensors and the robot learns to incorporate these into its strategy.</p>
+
+			<p>&nbsp;</p>
+			<p><strong>Video 8: <a href="video.php?name=NkM0VOGg33s">Click to play</a><br />
+			<br>Description: </strong>Three robots with three IR sensors.  These robots also have the ability to produce two signals: call or reject (green/red circles resp.).  When a robot detects a call signal (green), a robot turns towards it.  When a robot detects a reject signal (red), a robot moves away from it (or if it is directly in front, the robot pauses for a short time).
+
+<BR><BR>
+
+The first 30 seconds were recorded near the start of the simulation where most movement is still random.  By the 30 second mark however, we see two robots have learned to "follow" each other (the two robots starting at the left of the screen).<BR><BR>
+
+
+
+The robots accomplish this by having one robot (the leader) emit a reject call to keep the follower at a distance.  The follower however emits a call signal to keep the leader nearby.
+
+An ENN has control over where and when to emit a call/reject signal.  Receiving such a signal however is controlled by a robot's instincts.<BR><BR>
+
+
+
+The green pellets are "food" sources and provide a positive reinforcement.</p>
+
+			<p>&nbsp;</p>
+			<p><strong>Video 9: <a href="video.php?name=6Akn4SxlJ_8">Click to play</a><br />
+			<br>Description: </strong>Showing two robots - one using EL learning, the other U Learning.  The robot using EL for STM has learned to follow a wall at the start of the video (which begins several minutes after the simulation began).  Towards the late middle of the video, the robot changes its strategy and begins simply avoiding walls.  At the end, the robot again seems to be using the following strategy.  The U learning robot learned to avoid walls completely.</p>
+
+			<p>&nbsp;</p>
+			<p><strong>Video 10: <a href="video.php?name=_9L94Pe1GG4">Click to play</a><br />
+			<br>Description: </strong>Showing a graph of the activity of the first 8 hidden neurons in an ENN as it evolves.  At the start of the video there are only two hidden neurons (why the other graphs are flat-lined).  Towards the end new neurons are created and their activity is graphed.
+
+
+			<br><br>In our system, each hidden neuron uses a sigmoid activation function with range (0,1).  Inputs to the network (from the robot's sensors) are binary 0 or 1.  We find it interesting that an ENN develops a spiking pattern in most of its neurons.
+			<br><br>
+
+Note that delays/pauses in the video are mostly due to a robot's reflex running which pauses an ENN's operation.  Also note that this only shows the first 8 neurons in a list - some of them may be disabled and later re-enabled as the ENN develops.  Typically robots of this configuration (3 input IR sensors, 2 output motors) evolve to use 10-30 neurons.</p>
+
+			<p>&nbsp;</p>
+
+			<!-- #EndEditable --></div>
+		<!-- End Left Column -->
+		<!-- Begin Right Column -->
+		<div id="column_right">
+			<!-- #BeginEditable "sidebar" -->
+			<h3>Robots</h3>
+			<p>-<a href="index.html">Home</a><br /><br/>
+			-<a href="enn.html">ENN</a><br />
+&nbsp;&nbsp;&nbsp; -<a href="enn_videos.html"><b>Videos</b></a><br /><br/>
+			-<a href="qdm.html">Quantum Decision Maker</a><br /><br/>
+			-<a href="srs10.html">Simple Robot Sim 2010</a><br /><br/>
+			</p>
+			<!-- #EndEditable --></div>
+		<!-- End Right Column -->
+		<!-- Begin Footer -->
+		<div id="footer">
+			<div id="copyright">
+				<p>Copyright © 2015. All Rights Reserved.</p>
+			</div>
+			<p><a href="../index.html">Home</a> | <a href="../math/index.html">Math and CS</a> | 
+			<a href="index.html">
+			<span class="auto-style1">Robotics</span></a> | 
+			<a href="../papers.html"><span class="auto-style1">Publications</span></a> |
+			<a href="../contact.html"><span class="auto-style1">Contact</span></a></p>
+		</div>
+		<!-- End Footer --></div>
+	<!-- End content_container --></div>
+<!-- End Container -->
+
+</body>
+
+<!-- #EndTemplate -->
+
+</html>
