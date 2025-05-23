@@ -23,7 +23,10 @@ from azure.quantum.qiskit import AzureQuantumProvider
 provider = AzureQuantumProvider(workspace)
 
 #quantinuum_api_val_backend = provider.get_backend("quantinuum.sim.h1-1e")
-quantinuum_api_val_backend = provider.get_backend("quantinuum.qpu.h1-1")
+#quantinuum_api_val_backend = provider.get_backend("quantinuum.qpu.h1-1")
+
+cpuname = "quantinuum.sim.h1-1e" ## or use qpu
+
 from qiskit import QuantumCircuit
 from qiskit.visualization import plot_histogram
 
@@ -360,7 +363,7 @@ def CreateNextCipherText(numWires, numBlocks):
     buildPermutations()
 
     ## run the job:
-    quantinuum_api_val_backend = provider.get_backend("quantinuum.sim.h1-1e")
+    quantinuum_api_val_backend = provider.get_backend(cpuname)
 
     job = quantinuum_api_val_backend.run(circuit, shots=1)
     print("Job id:", job.id())
@@ -463,7 +466,7 @@ def runNoiseTest_Circuit(numWires, numBlocks):
     buildPermutations()
 
     ## run the job:
-    quantinuum_api_val_backend = provider.get_backend("quantinuum.sim.h1-1e")
+    quantinuum_api_val_backend = provider.get_backend(cpuname)
 
     job = quantinuum_api_val_backend.run(circuit, shots=1)
     print("Job id:", job.id())
